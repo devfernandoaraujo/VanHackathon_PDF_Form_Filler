@@ -7,6 +7,10 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.bg-black {
+    background-color: #2c3135;
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
@@ -29,6 +33,13 @@ a {
 html {
   font-size: 14px;
 }
+
+h1 {
+    font-family: "Roboto";
+    font-size: "36px";
+    font-weight: 900;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
