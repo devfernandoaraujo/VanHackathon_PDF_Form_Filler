@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDF_Form_Filler_UI", "PDF_Form_Filler_UI\PDF_Form_Filler_UI.csproj", "{DC9B9972-1956-4BAA-9D79-0FF4C68064C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDF_Form_Filler_Business", "PDF_Form_Filler_Business\PDF_Form_Filler_Business.csproj", "{7EBBE8AD-56EE-42A4-9628-842276A04D2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDF_Form_Filler_Business", "PDF_Form_Filler_Business\PDF_Form_Filler_Business.csproj", "{7EBBE8AD-56EE-42A4-9628-842276A04D2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDF_Form_Filter_BO", "PDF_Form_Filter_BO\PDF_Form_Filter_BO.csproj", "{98ED14A7-B180-459D-9962-C6E89290D998}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7EBBE8AD-56EE-42A4-9628-842276A04D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EBBE8AD-56EE-42A4-9628-842276A04D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EBBE8AD-56EE-42A4-9628-842276A04D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98ED14A7-B180-459D-9962-C6E89290D998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98ED14A7-B180-459D-9962-C6E89290D998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98ED14A7-B180-459D-9962-C6E89290D998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98ED14A7-B180-459D-9962-C6E89290D998}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

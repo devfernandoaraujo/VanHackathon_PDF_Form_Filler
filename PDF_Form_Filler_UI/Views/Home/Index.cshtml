@@ -1,31 +1,36 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
 }
-    <div class="text-center">
-        <div class="container">
-            <div class="jumbotron">
-                <h1 class="display-4">List of Candidates</h1>
-                <p>Select the candidate to fill out the Global Talent Stream Application</p>
-                <div class="container">
-                    <div class="row bg-light">
-                        <div class="col-sm border">
-                            First Name
-                        </div>
-                        <div class="col-sm border d-md-inline">
-                            Middle Name
-                        </div>
-                        <div class="col-sm border">
-                            Last name
-                        </div>
-                        <div class="col-sm border">
-                            Country
-                        </div>
-                        <div class="col-sm border">
-                            Generate form
-                        </div>
+
+@section Scripts{ 
+    <script src="~/js/home.js"></script>
+}
+<div class="text-center">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">List of Candidates</h1>
+            <p>Select the candidate to fill out the Global Talent Stream Application</p>
+            <div id="gridCandidates" class="container">
+                <div class="row bg-secondary text-white">
+                    <div class="col-sm border ">
+                        <h6>First Name</h6>
+                    </div>
+                    <div class="col-sm border">
+                        <h6>Middle Name</h6>
+                    </div>
+                    <div class="col-sm border">
+                        <h6>Last name</h6>
+                    </div>
+                    <div class="col-sm border">
+                        <h6>Country</h6>
+                    </div>
+                    <div class="col-sm border">
+                        <h6>Generate form</h6>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+</div>

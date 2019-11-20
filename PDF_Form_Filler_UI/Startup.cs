@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PDF_Form_Filler_Business;
+using PDF_Form_Filler_Business.Pdf;
 
 namespace PDF_Form_Filler_UI
 {
@@ -23,7 +25,21 @@ namespace PDF_Form_Filler_UI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Confguring MVC
+            services.AddMvc();
+
             services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+            //Enable json responses 
+            services.AddControllers().AddNewtonsoftJson();
+
+            /*Dependency Injection configuration*/
+            //ICandidates configuration
+            services.AddSingleton<ICandidates, Candidates>();
+
+            //IPdf configuration
+            services.AddSingleton<IPdf, Pdf>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +68,10 @@ namespace PDF_Form_Filler_UI
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //Enabling the use of static content
+            //look content in wwwroot folder
+            app.UseFileServer();
         }
     }
 }
